@@ -113,7 +113,7 @@ function MyStyledCodeInput() {
 - If `value` prop is provided, it can only be a string.
 - If `type` prop is provided, it can only be either `'text'` or `'password'`.
 
-**Warning**: If you use this component in any way other than what is documented here, you might experience strange behaviors. For example, if you might have done one, or all, of the following:
+**Warning**: If you use this component in a way that is against what is documented here, you might experience strange behaviors. For example, if you might have done one, or all, of the following:
 
 - provide `'date'` as the `type` prop,
 - provide values for `style` prop, or
