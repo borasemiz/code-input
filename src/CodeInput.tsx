@@ -8,20 +8,20 @@ import {
 
 type SegmentState = 'default' | 'focused' | 'filled';
 
-type SegmentComponentType = ComponentType<SegmentProps>;
-type SegmentContainerType = ComponentType<PropsWithChildren>;
-
 interface SegmentProps {
   state: SegmentState;
   children?: ReactNode;
 }
+
+export type SegmentComponentType = ComponentType<SegmentProps>;
+export type SegmentContainerComponentType = ComponentType<PropsWithChildren>;
 
 type BaseInput = Omit<InputHTMLAttributes<HTMLInputElement>, 'type' | 'className' | 'maxLength' | 'value' | 'style'>;
 
 interface Props extends BaseInput {
   length: number;
   Segment: SegmentComponentType;
-  SegmentContainer: SegmentContainerType;
+  SegmentContainer: SegmentContainerComponentType;
   type?: 'text' | 'password';
   value?: string;
 }
